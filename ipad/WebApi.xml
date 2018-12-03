@@ -169,6 +169,13 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="M:WebApi.Controllers.GhController.GetRequestToken(WebApi.Model.GhRequestTokenModel)">
+            <summary>
+            获取阅读链接token  （uin,key）
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="T:WebApi.Controllers.GroupController">
             <summary>
             群模块
@@ -681,6 +688,11 @@
         <member name="P:WebApi.Model.GhModel.ghid">
             <summary>
             公众号id  gh_xxxxxxx
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.GhRequestTokenModel.url">
+            <summary>
+            访问URL
             </summary>
         </member>
         <member name="P:WebApi.Model.GhSubscriptionCommandModel.uin">
@@ -1574,6 +1586,14 @@
             <param name="url"></param>
             <param name="uin"></param>
             <param name="key"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_GetRequestToken(System.String,System.String)">
+            <summary>
+            获取访问链接token
+            </summary>
+            <param name="ghid"></param>
+            <param name="url"></param>
             <returns></returns>
         </member>
         <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_GetContactLabelList">
