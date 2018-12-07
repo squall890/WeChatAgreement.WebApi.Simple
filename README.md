@@ -1,4 +1,4 @@
-# 微信mac协议，webapi免IIS部署版本。
+# 微信mac/ipad协议，webapi免IIS部署版本。
  请进入  http://www.keduoduo.online/ 进行注册授权<br/>
 1.找到mac/ipad目录<br/>
 2.打开WeChatServer.exe.config<br/>
@@ -15,7 +15,7 @@
 5.在浏览器运行http://localhost:22221/swagger/ 即可查看所有webapi文档。<br/>
 6.微信登录获取二维码需要参考Test.html 中websocket方式创建websocket链接来获取二维码登录。<br/>
 7.在微信成功登录以后，即可通过Http post的方式传入uuid来操作微信了<br/>
-
+8.请<a href="https://jingyan.baidu.com/article/335530daab956419cb41c38a.html">关闭dep</a> ，dep可能会导致不安全代码闪退。
 
 
 <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=3194af004cbc013eff0a61b99a46ae6f66c2c1f1fc62a9cdf58de1fd2b471058">获取更新信息请加入qq群：721314034</a>
