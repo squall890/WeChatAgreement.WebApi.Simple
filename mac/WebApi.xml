@@ -486,6 +486,11 @@
             消息内容
             </summary>
         </member>
+        <member name="P:WebApi.Model.SendTextModel.atlist">
+            <summary>
+            @好友列表  要@的微信id list
+            </summary>
+        </member>
         <member name="T:WebApi.Model.SendMassModel">
             <summary>
             发送文字消息实体类
@@ -1134,12 +1139,14 @@
             <param name="wxid"></param>
             <param name="content"></param>
         </member>
-        <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_SendMsg(System.String,System.String)">
+        <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_SendMsg(System.String,System.String,System.Collections.Generic.List{System.String})">
             <summary>
             发消息 -文字
             </summary>
             <param name="wxid"></param>
             <param name="content"></param>
+            <param name="atlist"></param>
+            <returns></returns>
         </member>
         <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_MassMessage(System.String,System.String)">
             <summary>
