@@ -70,6 +70,12 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="M:WebApi.Controllers.ContactController.SyncContacts(WebApi.Model.BaseModel)">
+            <summary>
+            重新获取好友 公众号 群组列表，会通过websocket 回调，同步完成以后可以通过查询接口进行查询
+            </summary>
+            <returns></returns>
+        </member>
         <member name="T:WebApi.Controllers.FansController">
             <summary>
             粉丝模块
