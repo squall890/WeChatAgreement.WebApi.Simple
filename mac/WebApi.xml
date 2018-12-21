@@ -417,6 +417,14 @@
             <param name="password"></param>
             <returns></returns>
         </member>
+        <member name="M:WebApi.Controllers.SystemController.SysLogOutAll(System.String,System.String)">
+            <summary>
+            注销单个进程
+            </summary>
+            <param name="uuid"></param>
+            <param name="password"></param>
+            <returns></returns>
+        </member>
         <member name="T:WebApi.Controllers.UserController">
             <summary>
             用户模块

@@ -5,7 +5,7 @@
     <title></title>
     <script src="jquery-2.2.4.min.js"></script>
     <script>
-        var uuid = uuid();
+        var uuid = "1";//uuid();
         // websocket 地址
         var host = "localhost:22222";
         // api地址 都是在App.config里面配置
@@ -13,12 +13,13 @@
         if ("WebSocket" in window) {
             // 打开一个 web socket
             //扫码登录,devicename 是设备名称，不传默认xzy-ipad
-            var ws = new WebSocket("ws://" + host + "/?action=scan&uuid=" + uuid + "&devicename=xzy-ipad");
+            //isreset 为进程重置，如果==false 会复用之前的微信进程，如果传true 会重置该进程，等同于重新登录。
+            var ws = new WebSocket("ws://" + host + "/?action=scan&uuid=" + uuid + "&devicename=xzy-ipad&isreset=false");
             //62登录
             //var username = '';
             //var password = '';
             //var str62 = ''
-            //var ws = new WebSocket("ws://" + host + "/?action=62&uuid=" + uuid + "&username=" + username + "&password=" + password + "&str62=" + str62);
+            //var ws = new WebSocket("ws://" + host + "/?action=62&uuid=" + uuid + "&username=" + username + "&password=" + password + "&str62=" + str62+"&isreset=false");
             //再次链接无需扫码
             //var ws = new WebSocket("ws://" + host + "/?action=reconnect&uuid=" + uuid);
             ws.onopen = function () {
