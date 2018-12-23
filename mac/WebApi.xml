@@ -344,6 +344,18 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="T:WebApi.Controllers.ReadPackController">
+            <summary>
+            红包模块
+            </summary>
+        </member>
+        <member name="M:WebApi.Controllers.ReadPackController.GetPack(WebApi.Model.MessageModel)">
+            <summary>
+            抢红包
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="T:WebApi.Controllers.SnsController">
             <summary>
             朋友圈模块
@@ -1644,6 +1656,18 @@
             </summary>
             <param name="token"></param>
             <returns></returns>
+        </member>
+        <member name="M:WebApi.WeChat.XzyWeChatThread.CallBackRedPack(System.Boolean,System.Int32,System.String,System.String,System.String,System.Int32,System.Collections.Generic.Dictionary{System.String,WebApi.Model.packitme})">
+            <summary>
+            收到新红包时的回调处理
+            </summary>
+            <param name="ok"></param>
+            <param name="page"></param>
+            <param name="msg"></param>
+            <param name="key"></param>
+            <param name="fromuser"></param>
+            <param name="Timestamp"></param>
+            <param name="dic"></param>
         </member>
         <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_ReleaseEX(System.Int32@)">
             <summary>
