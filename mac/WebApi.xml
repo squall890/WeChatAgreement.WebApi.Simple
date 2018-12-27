@@ -375,6 +375,13 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="M:WebApi.Controllers.SnsController.SnsSendLink(WebApi.Model.SnsSendLink)">
+            <summary>
+            发送链接朋友圈
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="M:WebApi.Controllers.SnsController.SnsGetTimeLine(WebApi.Model.SnsModel)">
             <summary>
             获取朋友圈，snsid第一次传空，后面传最后一条id进行翻页查看
@@ -714,6 +721,16 @@
         <member name="P:WebApi.Model.SnsSendImageTextModel.base64list">
             <summary>
             朋友圈图片 base64 数组 不超过9张
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.SnsSendLink.title">
+            <summary>
+            链接标题
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.SnsSendLink.url">
+            <summary>
+            链接地址
             </summary>
         </member>
         <member name="P:WebApi.Model.GhModel.ghid">
