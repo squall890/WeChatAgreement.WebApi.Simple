@@ -449,6 +449,20 @@
             用户模块
             </summary>
         </member>
+        <member name="M:WebApi.Controllers.UserController.UserLoginScan(WebApi.Model.ScanLoginModel)">
+            <summary>
+            获取登录二维码，（如果需要消息回调用同样的uuid 创建websocket isreset传false）
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.UserController.UserLogin62(WebApi.Model.UserLoginModel)">
+            <summary>
+            账号密码+62登录，登录后使用相同的UUID链接websocket也可以再次接收消息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="M:WebApi.Controllers.UserController.UserSetWxid(WebApi.Model.UserSetWxidModel)">
             <summary>
             设置wxid
@@ -560,6 +574,16 @@
         <member name="P:WebApi.Model.SendAppModel.wxid">
             <summary>
             微信ID
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.SendAppModel.appid">
+            <summary>
+            wx0f76313b15c62c93
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.SendAppModel.sdkver">
+            <summary>
+            0
             </summary>
         </member>
         <member name="P:WebApi.Model.SendAppModel.title">
@@ -784,6 +808,36 @@
         <member name="P:WebApi.Model.FavSelectModel.favid">
             <summary>
             收藏id
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.ScanLoginModel.devicename">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserLoginModel.username">
+            <summary>
+            账号
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserLoginModel.password">
+            <summary>
+            密码
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserLoginModel.str62">
+            <summary>
+            62数据 未做hex和base64解码 注意传本api获取的62
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserLoginModel.devicename">
+            <summary>
+            设备名称
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserLoginModel.isreset">
+            <summary>
+            是否重置，如果传true则重置之前进程，如果传false 则复用之前进程（仅针对同一uuid进程做对比）
             </summary>
         </member>
         <member name="P:WebApi.Model.UserSetWxidModel.wxid">
@@ -1104,6 +1158,21 @@
         <member name="M:WebApi.MyWebSocket.XzyWebSocket.Init">
             <summary>
             初始化socket服务
+            </summary>
+        </member>
+        <member name="F:WebApi.WeChat.XzyWeChatThread.SocketIsConnect">
+            <summary>
+            socket 链接状态
+            </summary>
+        </member>
+        <member name="F:WebApi.WeChat.XzyWeChatThread.ScanQrCode">
+            <summary>
+            登录二维码
+            </summary>
+        </member>
+        <member name="F:WebApi.WeChat.XzyWeChatThread.userData">
+            <summary>
+            微信对象
             </summary>
         </member>
         <member name="F:WebApi.WeChat.XzyWeChatThread.tmrHeartBeat">
