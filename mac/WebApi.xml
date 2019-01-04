@@ -1067,6 +1067,12 @@
             <param name="s"></param>
             <returns></returns>
         </member>
+        <member name="T:WebApi.Utils.FingerPrint">
+            <summary>
+            Generates a 16 byte Unique Identification code of a computer
+            Example: 4876-8DB5-EE85-69D3-FE52-8CF7-395D-2EA9
+            </summary>
+        </member>
         <member name="M:WebApi.Utils.Http_Helper.GetCookieInternal(System.String)">
             <summary>
             提取string Cookies
