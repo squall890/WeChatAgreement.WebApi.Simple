@@ -295,7 +295,14 @@
             <param name="model"></param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers.MsgController.SendImg(WebApi.Model.SendImgModel)">
+        <member name="M:WebApi.Controllers.MsgController.SendVoice(WebApi.Model.SendMediaModel)">
+            <summary>
+            发送语音消息
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.MsgController.SendImg(WebApi.Model.SendMediaModel)">
             <summary>
             发送图片消息
             </summary>
@@ -534,17 +541,17 @@
             消息内容
             </summary>
         </member>
-        <member name="T:WebApi.Model.SendImgModel">
+        <member name="T:WebApi.Model.SendMediaModel">
             <summary>
             发送图片消息实体类
             </summary>
         </member>
-        <member name="P:WebApi.Model.SendImgModel.wxid">
+        <member name="P:WebApi.Model.SendMediaModel.wxid">
             <summary>
             微信ID
             </summary>
         </member>
-        <member name="P:WebApi.Model.SendImgModel.base64">
+        <member name="P:WebApi.Model.SendMediaModel.base64">
             <summary>
             消息内容
             </summary>
@@ -1044,6 +1051,35 @@
             </summary>
             <param name="s"></param>
             <returns></returns>
+        </member>
+        <member name="M:WebApi.Utils.ffmpegUtils.Init">
+             <summary>
+            删除中间件pcm文件
+             </summary>
+        </member>
+        <member name="M:WebApi.Utils.ffmpegUtils.ConvertAmrToMp3(System.String,System.String)">
+            <summary>
+            amr 转换  mp3 格式
+            </summary>
+            <param name="amrFile">amr文件所在路径</param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Utils.ffmpegUtils.ConvertMp3ToAmr(System.String,System.String)">
+            <summary>
+            MP3 转换为 amr格式
+            </summary>
+            <param name="mp3File"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Utils.ffmpegUtils.FormatConvert(System.String)">
+             <summary>
+            解码/转码-格式
+            @param silk 源silk文件,需要绝对路径! 例:F:\zhuanma\vg2ub41omgipvrmur1fnssd3tq.silk
+            @param pcm 目标pcm文件,需要绝对路径  例:F:\zhuanma\vg2ub41omgipvrmur1fnssd3tq.pcm
+            @return
+             </summary>
+             <param name="cmdStr"></param>
+             <returns></returns>
         </member>
         <member name="T:WebApi.Utils.FingerPrint">
             <summary>
