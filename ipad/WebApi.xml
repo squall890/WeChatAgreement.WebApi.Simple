@@ -297,7 +297,14 @@
         </member>
         <member name="M:WebApi.Controllers.MsgController.SendVoice(WebApi.Model.SendMediaModel)">
             <summary>
-            发送语音消息
+            发送语音消息 mp3格式
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.MsgController.SendVoiceSilk(WebApi.Model.SendMediaModel)">
+            <summary>
+             发送语音消息 silk格式
             </summary>
             <param name="model"></param>
             <returns></returns>
