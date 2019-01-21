@@ -1209,6 +1209,11 @@
             初始化socket服务
             </summary>
         </member>
+        <member name="T:WebApi.WeChat.XzyWeChatThread">
+            <summary>
+            微信操作线程
+            </summary>
+        </member>
         <member name="F:WebApi.WeChat.XzyWeChatThread.SocketIsConnect">
             <summary>
             socket 链接状态
