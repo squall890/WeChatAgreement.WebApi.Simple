@@ -358,6 +358,27 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="M:WebApi.Controllers.MsgController.GetReadPack(WebApi.Model.MessageModel)">
+            <summary>
+            抢红包 ，sub_type == 49    CDATA[1002]
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.MsgController.GetTransfer(WebApi.Model.MessageModel)">
+            <summary>
+            接受转账 ，sub_type == 49   CDATA[微信转账]
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.Controllers.MsgController.IntoGroup(WebApi.Model.IntoGroupModel)">
+            <summary>
+            接受群邀请，sub_type == 49  ,传msg.content 包含 “加入群聊”
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="T:WebApi.Controllers.SnsController">
             <summary>
             朋友圈模块
@@ -503,14 +524,19 @@
             消息文件实体类
             </summary>
         </member>
-        <member name="P:WebApi.Model.MessageModel.uuid">
-            <summary>
-            创建websocket的uuid唯一标识
-            </summary>
-        </member>
         <member name="P:WebApi.Model.MessageModel.msg">
             <summary>
             微信返回的msg结果 传入JSON字符串
+            </summary>
+        </member>
+        <member name="T:WebApi.Model.IntoGroupModel">
+            <summary>
+            接受进群的实体类
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.IntoGroupModel.content">
+            <summary>
+            msg.content
             </summary>
         </member>
         <member name="T:WebApi.Model.SendTextModel">
@@ -1741,6 +1767,13 @@
             token登录
             </summary>
             <param name="token"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_WXTransferOperation(System.String)">
+            <summary>
+            接受转账
+            </summary>
+            <param name="msg"></param>
             <returns></returns>
         </member>
         <member name="M:WebApi.WeChat.XzyWeChatThread.CallBackRedPack(System.Boolean,System.Int32,System.String,System.String,System.String,System.Int32,System.Collections.Generic.Dictionary{System.String,WebApi.Model.packitme})">
