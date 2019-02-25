@@ -16,6 +16,13 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="M:WebApi.Controllers.AutoLoginController.Get62Hex(WebApi.Model.BaseModel)">
+            <summary>
+            获取62数据 ，base62和 hex解码， 数据内容微62xxxxxx
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="T:WebApi.Controllers.ContactController">
             <summary>
             好友模块
