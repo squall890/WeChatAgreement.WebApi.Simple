@@ -222,7 +222,7 @@
             <param name="model"></param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers.GroupController.GroupInviteMember(WebApi.Model.GroupUserModel)">
+        <member name="M:WebApi.Controllers.GroupController.GroupInviteMember(WebApi.Model.GroupUserDelModel)">
             <summary>
             邀请群成员
             </summary>
