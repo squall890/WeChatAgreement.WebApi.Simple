@@ -464,6 +464,13 @@
             系统模块
             </summary>
         </member>
+        <member name="M:WebApi.Controllers.SystemController.SysDeviceKey(WebApi.Model.DeviceKeyModel)">
+            <summary>
+            设置设备登录key
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="M:WebApi.Controllers.SystemController.SysGetAllOnline(System.String)">
             <summary>
             查询所有在线微信
@@ -485,6 +492,11 @@
             <param name="uuid"></param>
             <param name="password"></param>
             <returns></returns>
+        </member>
+        <member name="T:WebApi.Controllers.TestController">
+            <summary>
+            系统模块
+            </summary>
         </member>
         <member name="T:WebApi.Controllers.UserController">
             <summary>
@@ -920,6 +932,16 @@
         <member name="P:WebApi.Model.UserSetUserInfoModel.city">
             <summary>
             市 guangzhou
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.DeviceKeyModel.password">
+            <summary>
+            管理员密码
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.DeviceKeyModel.devicekey">
+            <summary>
+            设备信息
             </summary>
         </member>
         <member name="T:WebApi.Model.BackWxMsg">
