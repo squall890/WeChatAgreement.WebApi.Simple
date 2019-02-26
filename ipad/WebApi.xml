@@ -229,7 +229,7 @@
             <param name="model"></param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers.GroupController.GroupDelMember(WebApi.Model.GroupUserModel)">
+        <member name="M:WebApi.Controllers.GroupController.GroupDelMember(WebApi.Model.GroupUserDelModel)">
             <summary>
             踢出群成员
             </summary>
@@ -661,6 +661,11 @@
         <member name="P:WebApi.Model.GroupUserModel.user">
             <summary>
             用户微信id集合
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.GroupUserDelModel.user">
+            <summary>
+            用户微信id
             </summary>
         </member>
         <member name="T:WebApi.Model.GroupNameModel">
