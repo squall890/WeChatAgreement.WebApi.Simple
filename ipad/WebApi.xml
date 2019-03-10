@@ -505,6 +505,13 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="M:WebApi.Controllers.UserController.SetHeadImg(WebApi.Model.UserSetHeadImg)">
+            <summary>
+            设置头像
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="M:WebApi.Controllers.UserController.UserSetWxid(WebApi.Model.UserSetWxidModel)">
             <summary>
             设置wxid
@@ -875,6 +882,11 @@
         <member name="P:WebApi.Model.UserLoginModel.isreset">
             <summary>
             是否重置，如果传true则重置之前进程，如果传false 则复用之前进程（仅针对同一uuid进程做对比）
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserSetHeadImg.base64">
+            <summary>
+            base64
             </summary>
         </member>
         <member name="P:WebApi.Model.UserSetWxidModel.wxid">
@@ -1550,6 +1562,12 @@
             </summary>
             <param name="base64"></param>
             <returns></returns>
+        </member>
+        <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_SetHeadImage(System.String)">
+            <summary>
+            设置头像
+            </summary>
+            <param name="base64"></param>
         </member>
         <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_GetContacts">
             <summary>
