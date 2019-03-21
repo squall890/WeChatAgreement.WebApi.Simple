@@ -1,5 +1,5 @@
 # 微信mac/ipad协议，webapi免IIS部署版本。
- 请进入  http://www.keduoduo.online/ 进行注册授权<br/>
+ 请进入  http://www.wechattools.com/ 进行注册授权<br/>
 1.找到mac/ipad目录<br/>
 2.打开WeChatServer.exe.config<br/>
 3.配置授权信息，api端口，和websocket端口，管理员密码等参数<br/>
