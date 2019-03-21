@@ -19,7 +19,5 @@
 9.请<a target="_blank" href="https://jingyan.baidu.com/article/335530daab956419cb41c38a.html">关闭dep</a> ，dep可能会导致不安全代码闪退。
 10.消息回调通过websocket 异步回调的方式返回，如果websocket不在线则无法接受到消息回调，如果有特殊需求可以联系群主索要代码自行修改消息回调逻辑，例如存入数据库或对其他应用api进行调用。
 
-<a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=3194af004cbc013eff0a61b99a46ae6f66c2c1f1fc62a9cdf58de1fd2b471058">获取更新信息请加入qq群：721314034</a>
-<br/>
-demo源码暂时不放github了。如需要研究源码学习，请进群联系群主。<br/>
-demo源码使用c#进行开发，开发环境为VS 2017 框架.net framework 4.6.1<br/>
+对该项目有兴趣的可以加入我的知识星球来一起交流。
+![](https://github.com/changtuiqie/Mac.WeChat.WebApi.Simple/blob/master/zsxq.jpg) <br/>
