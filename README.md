@@ -17,7 +17,7 @@
 7.提供两种登录方式 ：1、二维码登录  2、账号密码+62登录  （通过二维码登录以后 调用api获取到62数据 保存下来后即可通过账号密码+62进行登录）<br/>
 8.在微信成功登录以后，即可通过Http post的方式传入uuid来操作微信了<br/>
 9.请<a target="_blank" href="https://jingyan.baidu.com/article/335530daab956419cb41c38a.html">关闭dep</a> ，dep可能会导致不安全代码闪退。<br/>
-10.消息回调通过websocket 异步回调的方式返回，如果websocket不在线则无法接受到消息回调，如果有特殊需求可以联系群主索要代码自行修改消息回调逻辑，例如存入数据库或对其他应用api进行调用。<br/>
+10.消息回调通过websocket 异步回调的方式返回，如果websocket不在线则无法接受到消息回调，如果有特殊需求可以联系群主索要代码自行修改消息回调逻辑，例如存入数据库或对其他应用api进行调用。<br/><br/>
 
 对该项目有兴趣的可以加入我的知识星球来一起交流。<br/>
 ![](https://github.com/changtuiqie/WeChatAgreement.WebApi.Simple/blob/master/zsxq.jpg) <br/>
