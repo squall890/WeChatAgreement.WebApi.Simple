@@ -19,7 +19,5 @@
 9.请<a target="_blank" href="https://jingyan.baidu.com/article/335530daab956419cb41c38a.html">关闭dep</a> ，dep可能会导致不安全代码闪退。<br/><br/>
 10.消息回调通过websocket 异步回调的方式返回，如果websocket不在线则无法接受到消息回调，如果有特殊需求可以联系群主索要代码自行修改消息回调逻辑，例如存入数据库或对其他应用api进行调用。<br/><br/>
 
-
-<a target="_blank"  href="http://sns.wechattools.com/">协议交流论坛</a><br/><br/>
 对该项目有兴趣的可以加入我的知识星球来一起交流。<br/>
 ![](https://github.com/changtuiqie/WeChatAgreement.WebApi.Simple/blob/master/zsxq.jpg) <br/>
