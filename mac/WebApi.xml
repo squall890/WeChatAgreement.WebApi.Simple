@@ -1091,6 +1091,13 @@
             头像
             </summary>
         </member>
+        <member name="M:WebApi.Utils.ApiClient.Get(System.String)">
+            <summary>
+            请求服务器的Get方式
+            </summary>
+            <param name="url">服务器请求地址</param>
+            <returns></returns>
+        </member>
         <member name="M:WebApi.Utils.BaseClass.IsNull(System.Object)">
             <summary>
             判断是否为空，为空返回true
