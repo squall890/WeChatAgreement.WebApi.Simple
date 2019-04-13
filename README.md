@@ -22,10 +22,10 @@
 10.有时微信多次非正常退出或者操作频繁时，会造成Api接口异常崩溃，可以运行进程保活工具<br/><br/>
 11.消息回调通过websocket 异步回调的方式返回，如果websocket不在线则无法接受到消息回调，或者在config中配置MsgCallBackUrl，消息将会进行表单提交。如果有特殊需求可以联系群主索要代码自行修改消息回调逻辑，例如存入数据库或对其他应用api进行调用。<br/><br/>
 
-#声明:
+# 声明:
 仅供自己学习研究使用，引起任何法律纠纷概不负责
 
-#更多:
+# 更多:
 demo源码暂时不放github了。如需要研究源码学习，请加入我的知识星球。<br/>
 demo源码使用c#进行开发，开发环境为VS2017 .net framework 4.6.1<br/>
 ![](https://github.com/changtuiqie/WeChatAgreement.WebApi.Simple/blob/master/zsxq.jpg) <br/>
