@@ -142,6 +142,13 @@
             <param name="model"></param>
             <returns></returns>
         </member>
+        <member name="M:WebApi.Controllers.FavController.FavDel(WebApi.Model.FavSelectModel)">
+            <summary>
+            删除收藏
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
         <member name="T:WebApi.Controllers.GhController">
             <summary>
             公众号模块
