@@ -142,13 +142,6 @@
             <param name="model"></param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.Controllers.FavController.FavDel(WebApi.Model.FavSelectModel)">
-            <summary>
-            删除收藏
-            </summary>
-            <param name="model"></param>
-            <returns></returns>
-        </member>
         <member name="T:WebApi.Controllers.GhController">
             <summary>
             公众号模块
@@ -1352,13 +1345,6 @@
             <param name="pNativeData"></param>
             <returns></returns>
         </member>
-        <member name="M:WebApi.WeChat.XzyWeChatThread.ImageToBytes(System.Drawing.Image)">
-            <summary>
-            图片转byte
-            </summary>
-            <param name="image"></param>
-            <returns></returns>
-        </member>
         <member name="M:WebApi.WeChat.XzyWeChatThread.ShowMessage(System.String)">
             <summary>
             打印消息
@@ -1835,7 +1821,7 @@
             <summary>
             创建标签
             </summary>
-            <param name="context"></param>
+            <param name="labelid"></param>
             <returns></returns>
         </member>
         <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_FavSync(System.String)">
@@ -1872,6 +1858,7 @@
             token登录
             </summary>
             <param name="token"></param>
+            <param name="str62"></param>
             <returns></returns>
         </member>
         <member name="M:WebApi.WeChat.XzyWeChatThread.Wx_WXTransferOperation(System.String)">
