@@ -13,8 +13,19 @@
         if ("WebSocket" in window) {
             // 打开一个 web socket
             //扫码登录,devicename 是设备名称，不传默认xzy-ipad
-            //isreset 为进程重置，如果==false 会复用之前的微信进程，如果传true 会重置该进程，等同于重新登录。
-            var ws = new WebSocket("ws://" + host + "/?action=scan&uuid=" + uuid + "&devicename=xzy-ipad&isreset=true");
+			/// 设置代理
+			/// </summary>
+			/// <param name="objects"></param>
+			/// <param name="proxy">http代理服务器，格式192.168.1.1:8888 </param>
+			/// <param name="proxytype">代理类型，1为http代理，2为socks4，3为socks5(需要用户名和密码)</param>
+			/// <param name="proxyname">代理的用户名,socks5需要。</param>
+			/// <param name="proxypwd">代理的密码,socks5需要。</param>
+			var proxy="";
+			var proxytype="";
+			var proxyname="";
+			var proxypwd="";
+		    //isreset 为进程重置，如果==false 会复用之前的微信进程，如果传true 会重置该进程，等同于重新登录。
+            var ws = new WebSocket("ws://" + host + "/?action=scan&uuid=" + uuid + "&devicename=xzy-ipad&isreset=true&proxy="+proxy+"&proxytype="+proxytype+"&proxyname="+proxyname+"&proxypwd=proxypwd");
             //62登录
             //var username = '';
             //var password = '';

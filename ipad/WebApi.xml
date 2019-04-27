@@ -871,6 +871,26 @@
             设备名称
             </summary>
         </member>
+        <member name="P:WebApi.Model.ScanLoginModel.proxytype">
+            <summary>
+            代理类型，1为http代理，2为socks4，3为socks5(需要用户名和密码)
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.ScanLoginModel.proxy">
+            <summary>
+            >http代理服务器，格式192.168.1.1:8888 ,如不需要代理可不传
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.ScanLoginModel.proxyname">
+            <summary>
+            代理账号，如代理不需要可为空 ,
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.ScanLoginModel.proxypwd">
+            <summary>
+            代理密码，如代理不需要可为空 ,
+            </summary>
+        </member>
         <member name="P:WebApi.Model.UserLoginModel.username">
             <summary>
             账号
@@ -889,6 +909,26 @@
         <member name="P:WebApi.Model.UserLoginModel.devicename">
             <summary>
             设备名称
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserLoginModel.proxytype">
+            <summary>
+            代理类型，1为http代理，2为socks4，3为socks5(需要用户名和密码)
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserLoginModel.proxy">
+            <summary>
+            >http代理服务器，格式192.168.1.1:8888 ,如不需要代理可不传
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserLoginModel.proxyname">
+            <summary>
+            代理账号，如代理不需要可为空 ,
+            </summary>
+        </member>
+        <member name="P:WebApi.Model.UserLoginModel.proxypwd">
+            <summary>
+            代理密码，如代理不需要可为空 ,
             </summary>
         </member>
         <member name="P:WebApi.Model.UserLoginModel.isreset">
@@ -1284,7 +1324,7 @@
             微信对象
             </summary>
         </member>
-        <member name="M:WebApi.WeChat.XzyWeChatThread.#ctor(Fleck.IWebSocketConnection,System.String)">
+        <member name="M:WebApi.WeChat.XzyWeChatThread.#ctor(Fleck.IWebSocketConnection,WebApi.Model.ScanLoginModel)">
             <summary>
             初始化，并且使用二维码登录。并且初始化一些计时器，但实际上这些计时器没有什么用。这些计时器，应该是为了实现类似signalr的功能
             </summary>
