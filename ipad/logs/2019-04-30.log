@@ -1,4 +1,0 @@
-2019-04-30 22:21:35.2545 WebApi.LogServer.Info Info:
-    Contact/GetContact----接口调用开始----{"model":{"uuid":"4ee05fa6-eb70-4aec-846a-70ad5d3742b7"}}  LogAttribute.OnActionExecuting => LogAttribute.3 => LogServer.Info 
-2019-04-30 22:21:35.3004 WebApi.LogServer.Info Info:
-    Contact/GetContact----接口调用开始----{"model":{"uuid":"4ee05fa6-eb70-4aec-846a-70ad5d3742b7"}}  LogAttribute.OnActionExecuted => LogAttribute.2 => LogServer.Info 
