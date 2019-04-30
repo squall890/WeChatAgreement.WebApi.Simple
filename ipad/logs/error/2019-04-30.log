@@ -1,0 +1,17 @@
+2019-04-30 22:10:03.4487 WebApi.ErrorAttribute.OnException Error:
+    未将对象引用设置到对象的实例。--WebApi--   在 WebApi.Filter.LogAttribute.GetIpaddress() 位置 D:\xm\git\Xzy.WeChat.IntPtr\IPAD-Scan\Xzy.Ipad.WeChat.Console\WebApi\Filter\LogAttribute.cs:行号 54
+   在 WebApi.Filter.LogAttribute.LogActionExecuteing(HttpActionContext filterContext) 位置 D:\xm\git\Xzy.WeChat.IntPtr\IPAD-Scan\Xzy.Ipad.WeChat.Console\WebApi\Filter\LogAttribute.cs:行号 48
+   在 WebApi.Filter.LogAttribute.OnActionExecuting(HttpActionContext filterContext) 位置 D:\xm\git\Xzy.WeChat.IntPtr\IPAD-Scan\Xzy.Ipad.WeChat.Console\WebApi\Filter\LogAttribute.cs:行号 31
+   在 System.Web.Http.Filters.ActionFilterAttribute.OnActionExecutingAsync(HttpActionContext actionContext, CancellationToken cancellationToken)
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Filters.ActionFilterAttribute.<ExecuteActionFilterAsyncCore>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ActionFilterResult.<ExecuteAsync>d__5.MoveNext()
+--- 引发异常的上一位置中堆栈跟踪的末尾 ---
+   在 System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   在 System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   在 System.Web.Http.Controllers.ExceptionFilterResult.<ExecuteAsync>d__6.MoveNext()  <ExecuteExceptionFilterAsyncCore>d__3.MoveNext => ExceptionFilterAttribute.OnExceptionAsync => ErrorAttribute.OnException 

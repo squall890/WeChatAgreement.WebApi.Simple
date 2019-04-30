@@ -1,0 +1,591 @@
+2019-04-30 22:10:03.2462 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-04-30 22:10:03.2921 Debug Found assembly location directory: 'D:\xm\git\WeChatAgreement.WebApi.Simple\ipad' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-04-30 22:10:03.2921 Debug Search for auto loading files in location: D:\xm\git\WeChatAgreement.WebApi.Simple\ipad
+2019-04-30 22:10:03.2921 Debug Found assembly location directory: 'D:\xm\git\WeChatAgreement.WebApi.Simple\ipad' (WeChatServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-04-30 22:10:03.2921 Debug Auto loading based on AppDomain-BaseDirectory found location: D:\xm\git\WeChatAgreement.WebApi.Simple\ipad
+2019-04-30 22:10:03.2921 Debug Start auto loading, location: D:\xm\git\WeChatAgreement.WebApi.Simple\ipad
+2019-04-30 22:10:03.2921 Debug Auto loading done
+2019-04-30 22:10:03.2921 Info Message Template Auto Format enabled
+2019-04-30 22:10:03.3121 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3121 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:10:03.3182 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-04-30 22:10:03.3182 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-04-30 22:10:03.3182 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3182 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3182 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3182 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-04-30 22:10:03.3182 Trace  Scanning Property Culture '' System.Globalization
+2019-04-30 22:10:03.3182 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-04-30 22:10:03.3182 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-04-30 22:10:03.3182 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3182 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3182 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3182 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-04-30 22:10:03.3182 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3182 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:10:03.3182 Debug Setting 'FileTarget.name' to 't1'
+2019-04-30 22:10:03.3182 Debug Setting 'FileTarget.fileName' to '${basedir}/logs/${shortdate}.log'
+2019-04-30 22:10:03.3182 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3182 Trace Scanning BaseDirLayoutRenderer 'Layout Renderer: ${basedir}'
+2019-04-30 22:10:03.3182 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3182 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:10:03.3334 Debug Setting 'FileTarget.layout' to '${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:10:03.3334 Debug Setting 'EventContextLayoutRenderer.item' to 'exception'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:10:03.3334 Debug Setting 'EventContextLayoutRenderer.item' to 'stacktrace'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3334 Info Adding target File Target[t1]
+2019-04-30 22:10:03.3334 Debug Registered target t1: NLog.Targets.FileTarget
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:10:03.3334 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-04-30 22:10:03.3334 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-04-30 22:10:03.3334 Trace  Scanning Property Culture '' System.Globalization
+2019-04-30 22:10:03.3334 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-04-30 22:10:03.3334 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-04-30 22:10:03.3334 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3334 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:10:03.3334 Debug Setting 'FileTarget.name' to 'error'
+2019-04-30 22:10:03.3334 Debug Setting 'FileTarget.fileName' to '${basedir}/logs/error/${shortdate}.log'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning BaseDirLayoutRenderer 'Layout Renderer: ${basedir}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:10:03.3334 Debug Setting 'FileTarget.layout' to '${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:10:03.3334 Debug Setting 'EventContextLayoutRenderer.item' to 'exception'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:10:03.3334 Debug Setting 'EventContextLayoutRenderer.item' to 'stacktrace'
+2019-04-30 22:10:03.3334 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:10:03.3334 Trace Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3334 Info Adding target File Target[error]
+2019-04-30 22:10:03.3334 Debug Registered target error: NLog.Targets.FileTarget
+2019-04-30 22:10:03.3490 Trace ParseRulesElement
+2019-04-30 22:10:03.3490 Info Configured from an XML element in D:\xm\git\WeChatAgreement.WebApi.Simple\ipad\WeChatServer.exe.Config...
+2019-04-30 22:10:03.3490 Debug Unused target checking is started... Rule Count: 2, Target Count: 2
+2019-04-30 22:10:03.3490 Debug Unused target checking is completed. Total Rule Count: 2, Total Target Count: 2, Unused Target Count: 0
+2019-04-30 22:10:03.3490 Debug --- NLog configuration dump ---
+2019-04-30 22:10:03.3490 Debug Targets:
+2019-04-30 22:10:03.3490 Debug File Target[t1]
+2019-04-30 22:10:03.3490 Debug File Target[error]
+2019-04-30 22:10:03.3490 Debug Rules:
+2019-04-30 22:10:03.3490 Debug logNamePattern: (:All) levels: [ Info ] appendTo: [ t1 ]
+2019-04-30 22:10:03.3490 Debug logNamePattern: (:All) levels: [ Error ] appendTo: [ error ]
+2019-04-30 22:10:03.3490 Debug --- End of NLog configuration dump ---
+2019-04-30 22:10:03.3638 Trace FindReachableObject<System.Object>:
+2019-04-30 22:10:03.3638 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Info ] appendTo: [ t1 ]'
+2019-04-30 22:10:03.3638 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-04-30 22:10:03.3638 Trace  Scanning FileTarget 'File Target[t1]'
+2019-04-30 22:10:03.3638 Trace   Scanning Property FileName ''${basedir}/logs/${shortdate}.log'' NLog.Layouts
+2019-04-30 22:10:03.3638 Trace   Scanning SimpleLayout ''${basedir}/logs/${shortdate}.log''
+2019-04-30 22:10:03.3638 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-04-30 22:10:03.3638 Trace   Scanning Property Encoding 'System.Text.DBCSCodePageEncoding' System.Text
+2019-04-30 22:10:03.3638 Trace   Scanning Property Layout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'' NLog.Layouts
+2019-04-30 22:10:03.3638 Trace   Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:10:03.3638 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3638 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3638 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-04-30 22:10:03.3638 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-04-30 22:10:03.3638 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3638 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Error ] appendTo: [ error ]'
+2019-04-30 22:10:03.3638 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-04-30 22:10:03.3638 Trace  Scanning FileTarget 'File Target[error]'
+2019-04-30 22:10:03.3638 Trace   Scanning Property FileName ''${basedir}/logs/error/${shortdate}.log'' NLog.Layouts
+2019-04-30 22:10:03.3638 Trace   Scanning SimpleLayout ''${basedir}/logs/error/${shortdate}.log''
+2019-04-30 22:10:03.3638 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace   Scanning Property Layout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'' NLog.Layouts
+2019-04-30 22:10:03.3638 Trace   Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:10:03.3638 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3638 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:10:03.3638 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3638 Trace    Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3638 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-04-30 22:10:03.3638 Trace   Scanning Property Encoding 'System.Text.DBCSCodePageEncoding' System.Text
+2019-04-30 22:10:03.3638 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-04-30 22:10:03.3638 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-04-30 22:10:03.3638 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3638 Info Found 40 configuration items
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${event-context}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${stacktrace}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${event-context}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${message}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${level}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${callsite}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${longdate}
+2019-04-30 22:10:03.3799 Trace Initializing '${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'
+2019-04-30 22:10:03.3799 Trace FindReachableObject<System.Object>:
+2019-04-30 22:10:03.3799 Trace Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:10:03.3799 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3799 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:10:03.3799 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3799 Trace  Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:10:03.3799 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3799 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3799 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3799 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:10:03.3799 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3799 Trace  Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3799 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3799 Trace  Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:10:03.3799 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3799 Trace  Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${shortdate}
+2019-04-30 22:10:03.3799 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3799 Trace Initializing '${basedir}/logs/error/${shortdate}.log'
+2019-04-30 22:10:03.3799 Trace FindReachableObject<System.Object>:
+2019-04-30 22:10:03.3951 Trace Scanning SimpleLayout ''${basedir}/logs/error/${shortdate}.log''
+2019-04-30 22:10:03.3951 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3951 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3951 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:10:03.3951 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3951 Trace Initializing File Target[error]
+2019-04-30 22:10:03.3951 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-04-30 22:10:03.3951 Trace Scanning FileTarget 'File Target[error]'
+2019-04-30 22:10:03.3951 Trace  Scanning Property FileName ''${basedir}/logs/error/${shortdate}.log'' NLog.Layouts
+2019-04-30 22:10:03.3951 Trace  Scanning SimpleLayout ''${basedir}/logs/error/${shortdate}.log''
+2019-04-30 22:10:03.3951 Trace  Scanning Property Layout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'' NLog.Layouts
+2019-04-30 22:10:03.3951 Trace  Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:10:03.3951 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-04-30 22:10:03.3951 Trace  Scanning Property Encoding 'System.Text.DBCSCodePageEncoding' System.Text
+2019-04-30 22:10:03.3951 Trace File Target[error] has 2 layouts
+2019-04-30 22:10:03.3951 Trace FileTarget(Name=error): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${event-context}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${stacktrace}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${event-context}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${message}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${level}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${callsite}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${longdate}
+2019-04-30 22:10:03.3951 Trace Initializing '${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'
+2019-04-30 22:10:03.3951 Trace FindReachableObject<System.Object>:
+2019-04-30 22:10:03.3951 Trace Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:10:03.3951 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.3951 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:10:03.3951 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3951 Trace  Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:10:03.3951 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3951 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:10:03.3951 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3951 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:10:03.3951 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3951 Trace  Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3951 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3951 Trace  Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:10:03.3951 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.3951 Trace  Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:10:03.3951 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.4108 Trace Initializing Layout Renderer: ${shortdate}
+2019-04-30 22:10:03.4108 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:10:03.4108 Trace Initializing '${basedir}/logs/${shortdate}.log'
+2019-04-30 22:10:03.4108 Trace FindReachableObject<System.Object>:
+2019-04-30 22:10:03.4108 Trace Scanning SimpleLayout ''${basedir}/logs/${shortdate}.log''
+2019-04-30 22:10:03.4108 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:10:03.4108 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.4108 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:10:03.4108 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:10:03.4108 Trace Initializing File Target[t1]
+2019-04-30 22:10:03.4108 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-04-30 22:10:03.4108 Trace Scanning FileTarget 'File Target[t1]'
+2019-04-30 22:10:03.4108 Trace  Scanning Property FileName ''${basedir}/logs/${shortdate}.log'' NLog.Layouts
+2019-04-30 22:10:03.4108 Trace  Scanning SimpleLayout ''${basedir}/logs/${shortdate}.log''
+2019-04-30 22:10:03.4108 Trace  Scanning Property Layout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'' NLog.Layouts
+2019-04-30 22:10:03.4108 Trace  Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:10:03.4108 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-04-30 22:10:03.4108 Trace  Scanning Property Encoding 'System.Text.DBCSCodePageEncoding' System.Text
+2019-04-30 22:10:03.4108 Trace File Target[t1] has 2 layouts
+2019-04-30 22:10:03.4108 Trace FileTarget(Name=t1): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-04-30 22:10:03.4108 Debug Watching path 'D:\xm\git\WeChatAgreement.WebApi.Simple\ipad' filter 'WeChatServer.exe.Config' for changes.
+2019-04-30 22:10:03.4108 Info Configuration initialized.
+2019-04-30 22:10:03.4108 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.5.11.8645. Product version: 4.5.11.
+2019-04-30 22:10:03.4108 Debug Targets for WebApi.LogServer by level:
+2019-04-30 22:10:03.4108 Debug Trace =>
+2019-04-30 22:10:03.4268 Debug Debug =>
+2019-04-30 22:10:03.4268 Debug Info => t1
+2019-04-30 22:10:03.4268 Debug Warn =>
+2019-04-30 22:10:03.4268 Debug Error => error
+2019-04-30 22:10:03.4268 Debug Fatal =>
+2019-04-30 22:10:03.4657 Debug FileTarget(Name=error): Process file 'D:\xm\git\WeChatAgreement.WebApi.Simple\ipad\logs\error\2019-04-30.log' on startup
+2019-04-30 22:10:03.4657 Debug Creating file appender: D:\xm\git\WeChatAgreement.WebApi.Simple\ipad\logs\error\2019-04-30.log
+2019-04-30 22:10:03.4657 Trace Opening D:\xm\git\WeChatAgreement.WebApi.Simple\ipad\logs\error\2019-04-30.log with allowFileSharedWriting=False
+2019-04-30 22:21:35.0930 Debug ScanAssembly('NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c')
+2019-04-30 22:21:35.1249 Debug Found assembly location directory: 'D:\xm\git\WeChatAgreement.WebApi.Simple\ipad' (NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c)
+2019-04-30 22:21:35.1249 Debug Search for auto loading files in location: D:\xm\git\WeChatAgreement.WebApi.Simple\ipad
+2019-04-30 22:21:35.1249 Debug Found assembly location directory: 'D:\xm\git\WeChatAgreement.WebApi.Simple\ipad' (WeChatServer, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null)
+2019-04-30 22:21:35.1249 Debug Auto loading based on AppDomain-BaseDirectory found location: D:\xm\git\WeChatAgreement.WebApi.Simple\ipad
+2019-04-30 22:21:35.1249 Debug Start auto loading, location: D:\xm\git\WeChatAgreement.WebApi.Simple\ipad
+2019-04-30 22:21:35.1249 Debug Auto loading done
+2019-04-30 22:21:35.1318 Info Message Template Auto Format enabled
+2019-04-30 22:21:35.1318 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1458 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:21:35.1458 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-04-30 22:21:35.1458 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-04-30 22:21:35.1458 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1458 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-04-30 22:21:35.1608 Trace  Scanning Property Culture '' System.Globalization
+2019-04-30 22:21:35.1608 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-04-30 22:21:35.1608 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-04-30 22:21:35.1608 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.1608 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:21:35.1608 Debug Setting 'FileTarget.name' to 't1'
+2019-04-30 22:21:35.1608 Debug Setting 'FileTarget.fileName' to '${basedir}/logs/${shortdate}.log'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning BaseDirLayoutRenderer 'Layout Renderer: ${basedir}'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:21:35.1608 Debug Setting 'FileTarget.layout' to '${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:21:35.1608 Debug Setting 'EventContextLayoutRenderer.item' to 'exception'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:21:35.1608 Debug Setting 'EventContextLayoutRenderer.item' to 'stacktrace'
+2019-04-30 22:21:35.1608 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1608 Trace Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.1608 Info Adding target File Target[t1]
+2019-04-30 22:21:35.1767 Debug Registered target t1: NLog.Targets.FileTarget
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:21:35.1767 Debug Setting 'UppercaseLayoutRendererWrapper.uppercase' to 'true'
+2019-04-30 22:21:35.1767 Trace Wrapping LevelLayoutRenderer with UppercaseLayoutRendererWrapper
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning UppercaseLayoutRendererWrapper 'Layout Renderer: ${uppercase}'
+2019-04-30 22:21:35.1767 Trace  Scanning Property Culture '' System.Globalization
+2019-04-30 22:21:35.1767 Trace  Scanning Property Inner 'SimpleLayout=Layout Renderer: ${level}' NLog.Layouts
+2019-04-30 22:21:35.1767 Trace  Scanning SimpleLayout 'SimpleLayout=Layout Renderer: ${level}'
+2019-04-30 22:21:35.1767 Trace   Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.1767 Trace   Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning LoggerNameLayoutRenderer 'Layout Renderer: ${logger}'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:21:35.1767 Debug Setting 'FileTarget.name' to 'error'
+2019-04-30 22:21:35.1767 Debug Setting 'FileTarget.fileName' to '${basedir}/logs/error/${shortdate}.log'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning BaseDirLayoutRenderer 'Layout Renderer: ${basedir}'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:21:35.1767 Debug Setting 'FileTarget.layout' to '${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:21:35.1767 Debug Setting 'EventContextLayoutRenderer.item' to 'exception'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:21:35.1767 Debug Setting 'EventContextLayoutRenderer.item' to 'stacktrace'
+2019-04-30 22:21:35.1767 Trace FindReachableObject<NLog.Internal.IRenderable>:
+2019-04-30 22:21:35.1767 Trace Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.1767 Info Adding target File Target[error]
+2019-04-30 22:21:35.1767 Debug Registered target error: NLog.Targets.FileTarget
+2019-04-30 22:21:35.1767 Trace ParseRulesElement
+2019-04-30 22:21:35.1767 Info Configured from an XML element in D:\xm\git\WeChatAgreement.WebApi.Simple\ipad\WeChatServer.exe.Config...
+2019-04-30 22:21:35.1950 Debug Unused target checking is started... Rule Count: 2, Target Count: 2
+2019-04-30 22:21:35.1950 Debug Unused target checking is completed. Total Rule Count: 2, Total Target Count: 2, Unused Target Count: 0
+2019-04-30 22:21:35.1950 Debug --- NLog configuration dump ---
+2019-04-30 22:21:35.1950 Debug Targets:
+2019-04-30 22:21:35.1950 Debug File Target[t1]
+2019-04-30 22:21:35.1950 Debug File Target[error]
+2019-04-30 22:21:35.1950 Debug Rules:
+2019-04-30 22:21:35.1950 Debug logNamePattern: (:All) levels: [ Info ] appendTo: [ t1 ]
+2019-04-30 22:21:35.1950 Debug logNamePattern: (:All) levels: [ Error ] appendTo: [ error ]
+2019-04-30 22:21:35.1950 Debug --- End of NLog configuration dump ---
+2019-04-30 22:21:35.1950 Trace FindReachableObject<System.Object>:
+2019-04-30 22:21:35.1950 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Info ] appendTo: [ t1 ]'
+2019-04-30 22:21:35.1950 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-04-30 22:21:35.1950 Trace  Scanning FileTarget 'File Target[t1]'
+2019-04-30 22:21:35.1950 Trace   Scanning Property FileName ''${basedir}/logs/${shortdate}.log'' NLog.Layouts
+2019-04-30 22:21:35.1950 Trace   Scanning SimpleLayout ''${basedir}/logs/${shortdate}.log''
+2019-04-30 22:21:35.1950 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.1950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.1950 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:21:35.1950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.1950 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-04-30 22:21:35.1950 Trace   Scanning Property Encoding 'System.Text.DBCSCodePageEncoding' System.Text
+2019-04-30 22:21:35.1950 Trace   Scanning Property Layout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'' NLog.Layouts
+2019-04-30 22:21:35.1950 Trace   Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:21:35.1950 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.1950 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:21:35.1950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.1950 Trace    Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:21:35.1950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.1950 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.1950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.1950 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:21:35.1950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.1950 Trace    Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.1950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.1950 Trace    Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:21:35.1950 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace    Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.2076 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-04-30 22:21:35.2076 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-04-30 22:21:35.2076 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-04-30 22:21:35.2076 Trace Scanning LoggingRule 'logNamePattern: (:All) levels: [ Error ] appendTo: [ error ]'
+2019-04-30 22:21:35.2076 Trace  Scanning Property Targets 'System.Collections.Generic.List`1[NLog.Targets.Target]' System.Collections.Generic
+2019-04-30 22:21:35.2076 Trace  Scanning FileTarget 'File Target[error]'
+2019-04-30 22:21:35.2076 Trace   Scanning Property FileName ''${basedir}/logs/error/${shortdate}.log'' NLog.Layouts
+2019-04-30 22:21:35.2076 Trace   Scanning SimpleLayout ''${basedir}/logs/error/${shortdate}.log''
+2019-04-30 22:21:35.2076 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.2076 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace    Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:21:35.2076 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace   Scanning Property Layout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'' NLog.Layouts
+2019-04-30 22:21:35.2076 Trace   Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:21:35.2076 Trace    Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.2076 Trace    Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:21:35.2076 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace    Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:21:35.2076 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace    Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.2076 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace    Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:21:35.2076 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace    Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.2076 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace    Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:21:35.2076 Trace    Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace    Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.2076 Trace   Scanning Property LineEnding 'Default' NLog.Targets
+2019-04-30 22:21:35.2076 Trace   Scanning Property Encoding 'System.Text.DBCSCodePageEncoding' System.Text
+2019-04-30 22:21:35.2076 Trace  Scanning Property ChildRules 'System.Collections.Generic.List`1[NLog.Config.LoggingRule]' System.Collections.Generic
+2019-04-30 22:21:35.2076 Trace  Scanning Property Filters 'System.Collections.Generic.List`1[NLog.Filters.Filter]' System.Collections.Generic
+2019-04-30 22:21:35.2076 Trace  Scanning Property Levels 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LogLevel]' System.Collections.ObjectModel
+2019-04-30 22:21:35.2076 Info Found 40 configuration items
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${event-context}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${stacktrace}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${event-context}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${message}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${level}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${callsite}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2076 Trace Initializing Layout Renderer: ${longdate}
+2019-04-30 22:21:35.2076 Trace Initializing '${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'
+2019-04-30 22:21:35.2076 Trace FindReachableObject<System.Object>:
+2019-04-30 22:21:35.2076 Trace Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:21:35.2076 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.2076 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:21:35.2076 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace  Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:21:35.2076 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2076 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.2236 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2236 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:21:35.2236 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2236 Trace  Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.2236 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2236 Trace  Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:21:35.2236 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2236 Trace  Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${shortdate}
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2236 Trace Initializing '${basedir}/logs/error/${shortdate}.log'
+2019-04-30 22:21:35.2236 Trace FindReachableObject<System.Object>:
+2019-04-30 22:21:35.2236 Trace Scanning SimpleLayout ''${basedir}/logs/error/${shortdate}.log''
+2019-04-30 22:21:35.2236 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.2236 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2236 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:21:35.2236 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2236 Trace Initializing File Target[error]
+2019-04-30 22:21:35.2236 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-04-30 22:21:35.2236 Trace Scanning FileTarget 'File Target[error]'
+2019-04-30 22:21:35.2236 Trace  Scanning Property FileName ''${basedir}/logs/error/${shortdate}.log'' NLog.Layouts
+2019-04-30 22:21:35.2236 Trace  Scanning SimpleLayout ''${basedir}/logs/error/${shortdate}.log''
+2019-04-30 22:21:35.2236 Trace  Scanning Property Layout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'' NLog.Layouts
+2019-04-30 22:21:35.2236 Trace  Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:21:35.2236 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-04-30 22:21:35.2236 Trace  Scanning Property Encoding 'System.Text.DBCSCodePageEncoding' System.Text
+2019-04-30 22:21:35.2236 Trace File Target[error] has 2 layouts
+2019-04-30 22:21:35.2236 Trace FileTarget(Name=error): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${event-context}
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${stacktrace}
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${event-context}
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${message}
+2019-04-30 22:21:35.2236 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2396 Trace Initializing Layout Renderer: ${level}
+2019-04-30 22:21:35.2396 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2396 Trace Initializing Layout Renderer: ${callsite}
+2019-04-30 22:21:35.2396 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2396 Trace Initializing Layout Renderer: ${longdate}
+2019-04-30 22:21:35.2396 Trace Initializing '${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'
+2019-04-30 22:21:35.2396 Trace FindReachableObject<System.Object>:
+2019-04-30 22:21:35.2396 Trace Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:21:35.2396 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.2396 Trace  Scanning LongDateLayoutRenderer 'Layout Renderer: ${longdate}'
+2019-04-30 22:21:35.2396 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2396 Trace  Scanning CallSiteLayoutRenderer 'Layout Renderer: ${callsite}'
+2019-04-30 22:21:35.2396 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2396 Trace  Scanning LevelLayoutRenderer 'Layout Renderer: ${level}'
+2019-04-30 22:21:35.2396 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2396 Trace  Scanning MessageLayoutRenderer 'Layout Renderer: ${message}'
+2019-04-30 22:21:35.2396 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2396 Trace  Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.2396 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2396 Trace  Scanning StackTraceLayoutRenderer 'Layout Renderer: ${stacktrace}'
+2019-04-30 22:21:35.2396 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2396 Trace  Scanning EventContextLayoutRenderer 'Layout Renderer: ${event-context}'
+2019-04-30 22:21:35.2396 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2396 Trace Initializing Layout Renderer: ${shortdate}
+2019-04-30 22:21:35.2396 Trace Initializing Layout Renderer: ${literal}
+2019-04-30 22:21:35.2396 Trace Initializing '${basedir}/logs/${shortdate}.log'
+2019-04-30 22:21:35.2396 Trace FindReachableObject<System.Object>:
+2019-04-30 22:21:35.2396 Trace Scanning SimpleLayout ''${basedir}/logs/${shortdate}.log''
+2019-04-30 22:21:35.2396 Trace  Scanning Property Renderers 'System.Collections.ObjectModel.ReadOnlyCollection`1[NLog.LayoutRenderers.LayoutRenderer]' System.Collections.ObjectModel
+2019-04-30 22:21:35.2396 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2396 Trace  Scanning ShortDateLayoutRenderer 'Layout Renderer: ${shortdate}'
+2019-04-30 22:21:35.2396 Trace  Scanning LiteralLayoutRenderer 'Layout Renderer: ${literal}'
+2019-04-30 22:21:35.2396 Trace Initializing File Target[t1]
+2019-04-30 22:21:35.2396 Trace FindReachableObject<NLog.Layouts.Layout>:
+2019-04-30 22:21:35.2396 Trace Scanning FileTarget 'File Target[t1]'
+2019-04-30 22:21:35.2396 Trace  Scanning Property FileName ''${basedir}/logs/${shortdate}.log'' NLog.Layouts
+2019-04-30 22:21:35.2396 Trace  Scanning SimpleLayout ''${basedir}/logs/${shortdate}.log''
+2019-04-30 22:21:35.2396 Trace  Scanning Property Layout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}'' NLog.Layouts
+2019-04-30 22:21:35.2396 Trace  Scanning SimpleLayout ''${longdate} ${callsite} ${level}:
+    ${message} ${event-context:item=exception} ${stacktrace} ${event-context:item=stacktrace}''
+2019-04-30 22:21:35.2396 Trace  Scanning Property LineEnding 'Default' NLog.Targets
+2019-04-30 22:21:35.2396 Trace  Scanning Property Encoding 'System.Text.DBCSCodePageEncoding' System.Text
+2019-04-30 22:21:35.2396 Trace File Target[t1] has 2 layouts
+2019-04-30 22:21:35.2396 Trace FileTarget(Name=t1): Using appenderFactory: NLog.Internal.FileAppenders.RetryingMultiProcessFileAppender+Factory
+2019-04-30 22:21:35.2545 Debug Watching path 'D:\xm\git\WeChatAgreement.WebApi.Simple\ipad' filter 'WeChatServer.exe.Config' for changes.
+2019-04-30 22:21:35.2545 Info Configuration initialized.
+2019-04-30 22:21:35.2545 Info NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 4.5.11.8645. Product version: 4.5.11.
+2019-04-30 22:21:35.2545 Debug Targets for WebApi.LogServer by level:
+2019-04-30 22:21:35.2545 Debug Trace =>
+2019-04-30 22:21:35.2545 Debug Debug =>
+2019-04-30 22:21:35.2545 Debug Info => t1
+2019-04-30 22:21:35.2545 Debug Warn =>
+2019-04-30 22:21:35.2545 Debug Error => error
+2019-04-30 22:21:35.2545 Debug Fatal =>
+2019-04-30 22:21:35.2755 Debug FileTarget(Name=t1): Process file 'D:\xm\git\WeChatAgreement.WebApi.Simple\ipad\logs\2019-04-30.log' on startup
+2019-04-30 22:21:35.2755 Debug Creating file appender: D:\xm\git\WeChatAgreement.WebApi.Simple\ipad\logs\2019-04-30.log
+2019-04-30 22:21:35.2755 Trace Opening D:\xm\git\WeChatAgreement.WebApi.Simple\ipad\logs\2019-04-30.log with allowFileSharedWriting=False
+2019-04-30 22:21:35.3014 Trace Opening D:\xm\git\WeChatAgreement.WebApi.Simple\ipad\logs\2019-04-30.log with allowFileSharedWriting=False
