@@ -11,7 +11,6 @@
     <add key="WebSocketHost" value="22222" />
     <add key="MsgCallBackUrl" value="" />
     <add key="AdminPassword" value="123456" />
-	<add key="IsReceiveMsg" value="false" />
 ```
 其中IsReceiveMsg为是否接受websocket消息以及接口回调消息的开关。由于消息无法上线程锁。可能会因消息并发导致程序崩溃。如无需用到接收消息功能可以关闭该选项，会稳定很多。
 <br/><br/>
